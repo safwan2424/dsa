@@ -14,6 +14,10 @@ void printarray(int arr[],int size){
 }
 int main(){
 
+  char ch[100];
+  cout << "Enter a string: ";
+    cin >> ch;
+    cout << "You entered: " << ch << endl;
 
     int arr[10];
    int n=10;
@@ -31,7 +35,7 @@ int main(){
 
      printarray(arr,n);
 
-
+cout<<ch<<endl;
 
 cout<<endl;
 cout<<"Eleemnt at 4th index is " <<arr[3];

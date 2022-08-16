@@ -1,6 +1,7 @@
 {
     "files.associations": {
-        "typeinfo": "cpp"
+        "typeinfo": "cpp",
+        "iostream": "cpp"
     },
     "files.autoSave": "afterDelay"
 }
