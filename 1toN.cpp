@@ -1,23 +1,37 @@
-#include<iostream>
+#
+#include <iostream>
+
 using namespace std;
 
-
-int power (int num1,int num2){
-
-    int ans=1;
-    for(int i=1;i<=num2;i++){
-        ans=ans*num1;
-    }
-    return ans;
+int sqrbin(int n){
+    int s=0;
+    int e=n;
+   long long int mid=s+(e-s)/2;
+   long long int ans=-1;
+  
+   while(s<=e){
+        long long int square=mid*mid;
+       if(square==n){
+         return mid;
+       }
+       if(square<mid){
+           ans=mid;
+           s=mid+1;
+       }
+       else
+       {
+           e =mid-1;
+       }
+       mid=s+(e-s)/2;
+   }
+   
+   return ans;
+    
 }
-
-int main(){
-
-
-int a;
- int n;
- cin>>a;
+int main()
+{
+    int n;
     cin>>n;
-int answer=power(a,n);
-cout<<answer;
+    cout<<sqrbin(n);
+    return 0;
 }

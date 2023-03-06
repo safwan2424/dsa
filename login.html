@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>Form</title>
+        
+    </head>
+
+    <body>
+
+        <form>
+            <div>
+                <label for ="email" >Email</label><br>
+                <input type="email" id="email" required placeholder="abc@gmail.com">
+            </div>
+            <div>
+                <label for ="range" >Country</label><br>
+                <input type="text" id="range" name="country" required value="India" >
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" required>
+            </div>
+            <div>
+                <label for="gender">Please select youe Gender</label><br>
+                <input type="radio" id="gender" name="Gender" value="Male" required>Male<br>
+                <input type="radio" id="gender" name="Gender" value="Female" required>Female<br>
+                <input type="radio" id="gender" name="Gender" value="Motknow" required>Not Know<br>
+            </div>
+            <div>
+                <label for="course">Please select your completed Course</label><br>
+                <input type="checkbox" id="course" name="C++" value="C++" required>C++<br>
+                <input type="checkbox" id="course" name="java" value="java" required>JAVA<br>
+                <input type="checkbox" id="course" name="Python" value="Python" required>Python<br>
+            </div>
+
+            <div>
+                <input type="submit">
+            </div>
+
+            <div> 
+                <p>Select the Month in which u born</p>
+                <select name="months_selected" >
+                    <option>Jan</option>
+                    <option>Feb</option>
+                    <option>Mar</option>
+                    <option>Apr</option>
+                    <option selected>May</option>
+                    <option>Jun</option>
+                    <option>Jly</option>
+                    <option>Aug</option>
+                    <option>Sep</option>
+
+                </select>        </div>
+                <div>
+                    <p>Enter your experience</p>
+                    <textarea name="experience" rows="10" cols="=10">
+
+                    </textarea>                </div>
+            <div>
+                <input type="button" value=""><br>
+                <button type ="reset">Reset</Button></button>
+            </div>
+        </form>
+    </body>
+</html>
